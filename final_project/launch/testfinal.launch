@@ -1,0 +1,6 @@
+<launch>
+ <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_empty_world.launch"/>
+ <node name="motion_controller" pkg="final_project" type="motion_controller.py" output='screen'/>
+ <node name="obstacle_detector" pkg="final_project" type="obstacle_detector.py"/>
+ <node name="goal_input" pkg="final_project" type="goal_input.py"/>
+</launch>
